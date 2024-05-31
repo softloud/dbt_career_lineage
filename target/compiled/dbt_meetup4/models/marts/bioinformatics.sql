@@ -1,0 +1,1 @@
+select * from "msw_data_analytics"."dev_cgray"."int_pipeline_pilot"

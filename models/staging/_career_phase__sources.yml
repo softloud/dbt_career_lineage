@@ -1,0 +1,8 @@
+version 2:
+
+sources:
+  - name: dev_cgray
+    tables:
+      - name: stg_ed_math_ugrad
+      - name: stg_ed_statistics_phd
+      - name: stg_start_ups

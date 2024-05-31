@@ -1,0 +1,64 @@
+version: 2
+
+exposures: 
+
+  - name: bioinformatics
+    type: application
+
+    depends_on:
+      - ref('pipeline_pilot')
+      - ref('R_language')     
+
+    owner:
+      name: Charles T. Gray
+  
+  - name: cyber_and_forensics_finance
+    type: application
+
+    depends_on:
+      - ref('R_language')     
+
+    owner:
+      name: Charles T. Gray
+
+  - name: open_data_curation
+    type: application
+
+    depends_on:
+      - ref('R_packaged_analyses')     
+
+    owner:
+      name: Charles T. Gray
+
+  - name: data_simulation_modelling_methodology
+    type: application
+
+    depends_on:
+      - ref('R_targets')     
+      - ref('R_packaged_analyses')
+    owner:
+      name: Charles T. Gray
+
+  - name: neuromarketing_model_dev
+    type: application
+
+    depends_on:
+      - ref('python')     
+      - ref('R_targets')     
+
+    owner:
+      name: Charles T. Gray
+
+  - name: video_game_analytics
+    type: application
+
+    depends_on:
+      - ref('python')     
+      - ref('DBT')
+      - ref('R_language')
+      - ref('redshift')
+      - ref('tableau')
+      - ref('fivetran')     
+
+    owner:
+      name: Charles T. Gray
